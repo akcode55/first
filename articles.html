@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المقالات - موقع تعليم البرمجة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">الصفحة الرئيسية</a>
+            <a href="courses.html">الكورسات</a>
+            <a href="books.html">الكتب</a>
+            <a href="articles.html" class="active">المقالات</a>
+            <a href="projects.html">المشاريع</a>
+            <a href="games.html">العاب للتعلم</a>
+            <a href="#">الأسئلة</a>
+        </div>
+    </nav>
+
+    <main>
+        <header>
+            <h1>المقالات التعليمية</h1>
+            <p>دروس تفصيلية لتعلم لغات البرمجة</p>
+        </header>
+
+        <div class="languages-grid">
+            <div class="language-card" data-lang="javascript">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="language-card" data-lang="python">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                <h3>Python</h3>
+            </div>
+            <div class="language-card" data-lang="java">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java">
+                <h3>Java</h3>
+            </div>
+        </div>
+
+        <div class="articles-container" id="articlesList"></div>
+    </main>
+
+    <script src="articles.js"></script>
+</body>
+</html>

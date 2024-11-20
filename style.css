@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #242424;
+    color: white;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #ff6b00;
+    transform: translateY(-2px);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    color: #888;
+}
+
+.cards, .languages-grid, .books-grid, .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card, .language-card {
+    background-color: #ff6b00;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover, .language-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-content {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    height: 100%;
+}
+
+.card img, .language-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.card h2, .language-card h3 {
+    color: #ff6b00;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+.card button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin-top: 10px;
+        }
+
+        .card button:hover {
+            background-color: #ffffff;
+            color: #ff6600;
+            border: 1px solid #ff6600;
+            transform: scale(1.1);
+        }
+.article-item {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.article-item h2 {
+    color: #ff6b00;
+    margin-bottom: 1.5rem;
+}
+
+.article-item h3 {
+    color: #ff6b00;
+    margin: 1.5rem 0 1rem;
+}
+
+.article-item p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.article-item ul {
+    list-style-position: inside;
+    margin: 1rem 0;
+}
+
+.article-item li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Rest of the existing styles remain unchanged */
